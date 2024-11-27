@@ -151,10 +151,10 @@ const Card = () => {
         {filteredUsers.map((user) => (
           <div
             key={user.id}
-            className="max-w-md w-full bg-white shadow-lg rounded-lg p-5 flex items-center relative"
+            className="max-w-md w-full bg-white rounded-lg p-5 flex items-center relative text-red hover:shadow-2xl hover:-translate-y-2 hover:scale-105 hover:bg-gray-100 transition-all duration-300 ease-in-out"
           >
             <div
-              className="flex flex-col mr-4"
+              className="flex flex-col mr-4 cursor-pointer"
               onClick={() => navigate(`/user/${user.id}`)}
             >
               <h2 className="text-xl font-semibold">{user.name}</h2>
